@@ -11,7 +11,7 @@ scanBtn.addEventListener("click", async () => {
     video.srcObject = stream; // Add this line to set the stream as the source for the video element
 
     // Create a new instance of the ZXing barcode reader
-    //const codeReader = new ZXing.BrowserBarcodeReader();
+    // const codeReader = new ZXing.BrowserBarcodeReader();
 
     // Decode the barcode image from the camera stream
     const result = await codeReader.decodeFromStream(stream);

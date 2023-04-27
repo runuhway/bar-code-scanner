@@ -14,7 +14,7 @@ scanBtn.addEventListener("click", async () => {
     // const codeReader = new ZXing.BrowserBarcodeReader();
 
     // Decode the barcode image from the camera stream
-    const result = await codeReader.decodeFromStream(stream);
+    // const result = await codeReader.decodeFromStream(stream);
 
     // Update the content of the result div with the barcode data
     resultDiv.textContent = result.text;

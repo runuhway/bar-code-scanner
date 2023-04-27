@@ -17,12 +17,12 @@ scanBtn.addEventListener("click", async () => {
     // const result = await codeReader.decodeFromStream(stream);
 
     // Update the content of the result div with the barcode data
-    resultDiv.textContent = result.text;
+    // resultDiv.textContent = result.text;
 
     // Stop the camera stream
     stream.getTracks().forEach((track) => track.stop());
   } catch (error) {
-    console.error(error);
+    // console.error(error);
   }
   
 });

@@ -1,7 +1,6 @@
 // Get the HTML elements
 const scanBtn = document.querySelector("#scan-btn");
 const resultDiv = document.querySelector("#result-div");
-const stream = await navigator.mediaDevices.getUserMedia({ video: true });
 
 
 // Add a click event listener to the scan button

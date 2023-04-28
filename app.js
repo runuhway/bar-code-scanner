@@ -29,7 +29,7 @@ scanBtn.addEventListener("click", async () => {
  });
     
   } catch (error) {
-    // console.error(error);
+     console.error(error);
   }
 }
     

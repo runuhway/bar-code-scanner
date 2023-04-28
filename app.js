@@ -8,9 +8,9 @@ const video = document.getElementById('video');
 scanBtn.addEventListener("click", async () => {
   try {
     // Get access to the device camera
-    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-    video.srcObject = stream; // Add this line to set the stream as the source for the video element
-
+    navigator.mediaDevices.getUserMedia({ video:true})
+    .then(stream => video.srcObject = stream)
+    .catch(log);
     // Create a new instance of the ZXing barcode reader
     // const codeReader = new ZXing.BrowserBarcodeReader();
 
@@ -21,7 +21,7 @@ scanBtn.addEventListener("click", async () => {
     // resultDiv.textContent = result.text;
 
     // Stop the camera stream
-    stream.getTracks().forEach((track) => track.stop());
+    // stream.getTracks().forEach((track) => track.stop());
   } catch (error) {
     // console.error(error);
   }

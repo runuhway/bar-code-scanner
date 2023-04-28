@@ -13,7 +13,7 @@ scanBtn.addEventListener("click", async () => {
     .catch(log);
     // Create a new instance of the ZXing barcode reader
     // const codeReader = new ZXing.BrowserBarcodeReader();
-
+    
     // Decode the barcode image from the camera stream
     // const result = await codeReader.decodeFromStream(stream);
 

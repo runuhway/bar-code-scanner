@@ -31,7 +31,7 @@ scanBtn.addEventListener("click", async () => {
   } catch (error) {
      console.error(error);
   }
-}
+})
     
     // Decode the barcode image from the camera stream
     // const result = await codeReader.decodeFromStream(stream);

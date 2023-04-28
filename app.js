@@ -8,7 +8,7 @@ const video = document.getElementById('video');
 scanBtn.addEventListener("click", async () => {
   try {
     // Get access to the device camera
-    navigator.mediaDevices.getUserMedia( video:true} {facingMode: "environment"} })
+    navigator.mediaDevices.getUserMedia( {video:true} {facingMode: "environment"} )
     .then(stream => video.srcObject = stream)
     .catch(log);
     // Create a new instance of the ZXing barcode reader

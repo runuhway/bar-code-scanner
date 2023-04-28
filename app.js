@@ -28,10 +28,11 @@ scanBtn.addEventListener("click", async () => {
   }
  });
     
-  } catch (error) {
-     console.error(error);
+  } catch (err) {
+    // an error occurred, log it to the console
+    console.error(err);
   }
-})
+});
     
     // Decode the barcode image from the camera stream
     // const result = await codeReader.decodeFromStream(stream);

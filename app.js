@@ -34,6 +34,6 @@ scanBtn.addEventListener("click", async () => {
     // stream.getTracks().forEach((track) => track.stop());
  // } catch (error) {
     // console.error(error);
-  //}
+  }
   
 });

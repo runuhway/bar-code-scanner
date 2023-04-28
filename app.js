@@ -19,8 +19,9 @@ scanBtn.addEventListener("click", async () => {
     codeReader.decodeFromVideoDevice(null, videoElement, (result, err) => {
   if (result) {
     console.log(result.text); // print the barcode text to the console
-  }
-  if (err && !(err instanceof ZXing.NotFoundException)) {
+              }
+  if (err && !(err instanceof ZXing.NotFoundException)) 
+  {
     console.error(err); // print the error to the console
   }
     
@@ -28,12 +29,13 @@ scanBtn.addEventListener("click", async () => {
     // const result = await codeReader.decodeFromStream(stream);
 
     // Update the content of the result div with the barcode data
-   //  resultDiv.textContent = result.text;
+    //  resultDiv.textContent = result.text;
 
     // Stop the camera stream
     // stream.getTracks().forEach((track) => track.stop());
- // } catch (error) {
+    // } catch (error) {
     // console.error(error);
-  }
+                                                                        }
+    }
   
 });

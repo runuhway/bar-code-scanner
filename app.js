@@ -15,6 +15,8 @@ scanBtn.addEventListener("click", async () => {
      const codeReader = new ZXing.BrowserBarcodeReader();
     // get a reference to the video element
      const videoElement = document.getElementById('video');
+    
+    
     // start the barcode scanner
     codeReader.decodeFromVideoDevice(null, videoElement, (result, err) => {
   if (result) {
@@ -24,6 +26,10 @@ scanBtn.addEventListener("click", async () => {
   {
     console.error(err); // print the error to the console
   }
+ });
+    
+  }
+}
     
     // Decode the barcode image from the camera stream
     // const result = await codeReader.decodeFromStream(stream);
@@ -35,7 +41,3 @@ scanBtn.addEventListener("click", async () => {
     // stream.getTracks().forEach((track) => track.stop());
     // } catch (error) {
     // console.error(error);
-                                                                        }
-    }
-  
-});
